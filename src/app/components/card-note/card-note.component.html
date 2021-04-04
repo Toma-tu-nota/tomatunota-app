@@ -1,0 +1,10 @@
+<ion-card *ngFor="let item of variables.notes" (click)="editNote(item)">
+  <ion-card-header>
+    <ion-card-title>{{ item.name }}</ion-card-title>
+    <ion-icon name="close-outline" (click)="deleteNote(item)"></ion-icon>
+  </ion-card-header>
+
+  <ion-card-content>
+    {{ item.description }}
+  </ion-card-content>
+</ion-card>

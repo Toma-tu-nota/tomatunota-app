@@ -1,0 +1,18 @@
+<ion-content>
+  <div class="container-center-vertical">
+    <ion-textarea
+      id="textarea"
+      placeholder="Escribe tu nota"
+      [value]="description"
+      (input)="typingText($event)"
+    >
+    </ion-textarea>
+  </div>
+</ion-content>
+<ion-footer class="footer-center-vertical ion-no-border">
+  <app-btn
+    *ngIf="description?.length >= 1"
+    (click)="saveDescription(description)"
+    >Guardar nota</app-btn
+  >
+</ion-footer>

@@ -1,0 +1,15 @@
+<ion-content no-border>
+  <div class="container-center-vertical">
+    <ion-input
+      placeholder="Escribe el nombre de tu nota"
+      type="text"
+      [value]="name"
+      (input)="typingText($event)"
+    ></ion-input>
+  </div>
+</ion-content>
+<ion-footer class="footer-center-vertical ion-no-border">
+  <app-btn *ngIf="name?.length >= 1" (click)="saveName(name)"
+    >Siguiente</app-btn
+  >
+</ion-footer>

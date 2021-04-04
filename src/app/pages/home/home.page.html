@@ -1,0 +1,11 @@
+<ion-content fullscreen="true">
+  <div class="container-center-vertical">
+    <div *ngIf="variables.notes?.length <= 0">
+      <ion-text>¡Añade tu primera nota!</ion-text>
+    </div>
+    <div *ngIf="variables.notes?.length >= 1">
+      <app-card-note></app-card-note>
+    </div>
+    <ion-icon name="add" routerLink="/add-note"></ion-icon>
+  </div>
+</ion-content>

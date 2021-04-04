@@ -1,0 +1,14 @@
+:host {
+  ion-card {
+    width: 80vw;
+  }
+  ion-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ion-icon {
+    width: 30px;
+    height: 20px;
+  }
+}

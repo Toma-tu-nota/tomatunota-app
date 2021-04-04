@@ -1,0 +1,10 @@
+:host {
+  ion-textarea {
+    display: contents;
+    text-align: center;
+  }
+  #textarea > div > textarea {
+    width: 80vw !important;
+    height: 50px !important;
+  }
+}
