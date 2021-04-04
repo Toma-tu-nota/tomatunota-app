@@ -1,0 +1,7 @@
+{
+  "name": "tomatunota-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
